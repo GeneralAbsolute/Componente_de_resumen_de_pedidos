@@ -55,7 +55,8 @@ body{
     background-color: var(--Verypaleblue);
     padding: 10px;
     border-radius: 10px;
-    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 25px;
+    
 }
 .caja-orden a{
     color: var(--Brightblue);
@@ -70,7 +71,8 @@ body{
 }
 .caja-detalle{
 margin-left: 16px;
-border-radius: 0px 0px 20px 20px;
+align-items: center;
+
 }
 .caja-detalle p{
     color: #000;
@@ -80,6 +82,7 @@ border-radius: 0px 0px 20px 20px;
 }
 .caja-detalle span{
     color: var(--Desaturatedblue);
+    line-height: 1em;
 }
 .botones{
     display: flex;
