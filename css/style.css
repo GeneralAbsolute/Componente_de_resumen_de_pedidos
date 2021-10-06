@@ -1,0 +1,117 @@
+:root{
+     --Paleblue: hsl(225, 100%, 94%);
+     --Brightblue: hsl(245, 75%, 52%);
+     --Verypaleblue: hsl(225, 100%, 98%);
+     --Desaturatedblue: hsl(224, 23%, 55%);
+     --Darkblue: hsl(223, 47%, 23%);
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    background-image:url(../images/pattern-background-mobile.svg);
+    background-size: 100%;
+    background-color: var(--Paleblue);
+}
+
+.contenedor{
+    margin: 70px 20px;
+}
+.tarjeta{
+    border-radius: 20px;
+    box-shadow:3px 3px 25px gray ;
+}
+.caja-imagen{
+    border-radius: 20px 20px 0px 0px ;
+    background-color: white;
+}
+.caja-imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px ;
+}
+.caja-inferior{
+    background-color: white;
+    text-align: center;
+    padding: 24px 24px;
+    border-radius: 0px 0px 20px 20px;
+}
+.caja-inferior h1{
+ color: var(--Darkblue);
+ font-size: 1.8em;
+}
+.caja-inferior p{
+    color: var(--Desaturatedblue);
+    line-height: 1.7em;
+    font-size: 1.1em;
+    
+}
+.caja-orden{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Verypaleblue);
+    padding: 10px;
+    border-radius: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+.caja-orden a{
+    color: var(--Brightblue);
+    font-weight:700;
+    
+}
+.caja-musica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.caja-detalle{
+margin-left: 16px;
+border-radius: 0px 0px 20px 20px;
+}
+.caja-detalle p{
+    color: #000;
+    margin: 0px;
+    line-height: 1em;
+    font-weight: bold;
+}
+.caja-detalle span{
+    color: var(--Desaturatedblue);
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 20px 20px;
+}
+.btn-pago{
+    background-color: var(--Brightblue);
+    color: #fff;
+    font-size: 700;
+    border: 0px;
+    border-radius: 10px;
+    padding:20px ;
+    box-shadow: 3px 15px 10px gray;
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+}
+.btn-cancel{
+    background-color: #fff;
+    border: 0px;
+    color: var(--Desaturatedblue);
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0px 0px 20px 20px;
+}
+@media screen and (min-width:768px){
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+    .contenedor{
+        margin: 30px 370px;
+    }
+}
+
